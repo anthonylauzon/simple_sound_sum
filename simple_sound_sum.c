@@ -13,7 +13,7 @@ int main(int argc, char **argv) {
   if (num_sounds < 2)
     return 1;
 
-  const char* outfile = argv[argc-1];
+  const char *outfile = argv[argc-1];
 
   SNDFILE **sounds = (SNDFILE **) malloc(num_sounds * sizeof(SNDFILE *));
   SF_INFO *sound_info = (SF_INFO *) malloc(num_sounds * sizeof(SF_INFO));
