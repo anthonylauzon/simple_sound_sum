@@ -1,8 +1,8 @@
 all: simple_sound_sum.o
   gcc -Wall \
-  simple_sound_sum.o \
-  `pkg-config --libs sndfile` \
-  -o simple_sound_sum
+    simple_sound_sum.o \
+    `pkg-config --libs sndfile` \
+    -o simple_sound_sum
 
 simple_sound_sum: simple_sound_sum.c
   gcc -Wall \
